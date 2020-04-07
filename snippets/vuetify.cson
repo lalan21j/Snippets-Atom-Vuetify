@@ -1,0 +1,7 @@
+'.text.html.vue':
+
+  'Button -> Vuetify':
+    'prefix': 'v-btn',
+    'body': """
+    <v-btn color="primary">$1</v-btn>
+    """
