@@ -2,7 +2,12 @@
   "name": "Snippets-Atom-Vuetify",
   "version": "1.1.0",
   "description": "Snippets Vuetify",
-  "keywords": [],
+  "keywords": [
+    "vuetify",
+    "vuetify atom",
+    "vuetify autocomplete",
+    "vuetify autocompletado"
+  ],
   "activationCommands": {
     "atom-workspace": "my-package:toggle"
   },
