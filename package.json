@@ -1,6 +1,6 @@
 {
   "name": "Snippets-Atom-Vuetify",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Snippets Vuetify",
   "keywords": [],
   "activationCommands": {
@@ -12,6 +12,5 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {},
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
