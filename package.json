@@ -1,15 +1,17 @@
 {
-  "name": "atom-vuetify-snippets",
+  "name": "Snippets Atom Vuetify",
   "version": "0.0.0",
-  "description": "Snippets atom-vuetify",
+  "description": "Snippets Vuetify",
   "keywords": [],
   "activationCommands": {
     "atom-workspace": "my-package:toggle"
   },
-  "repository": "https://github.com/lalan21j/atom-vuetify.git",
+  "repository": "https://github.com/lalan21j/Snippets-Atom-Vuetify.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+  }
 }
