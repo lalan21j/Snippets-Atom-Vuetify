@@ -6,7 +6,8 @@
     "vuetify",
     "vuetify atom",
     "vuetify autocomplete",
-    "vuetify autocompletado"
+    "vuetify autocompletado",
+    "vuetify snippets"
   ],
   "activationCommands": {
     "atom-workspace": "my-package:toggle"
