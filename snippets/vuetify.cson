@@ -42,19 +42,11 @@
     """,
     "description": "El componente v-banner se usa como mensaje de interrupción intermedia para el usuario con 1-2 acciones."
 
-  'Checkbox -> Vuetify':
-    'prefix': 'v-checkbox',
+  'Boilerplate -> Vuetify':
+    'prefix': 'v-boilerplate',
     'body': """
-    <v-checkbox $1></v-checkbox>
-    """,
-    "description": "Los componentes de control de selección permiten al usuario seleccionar opciones."
-
-  'Combobox -> Vuetify':
-    'prefix': 'v-combobox',
-    'body': """
-    <v-combobox $1></v-combobox>
-    """,
-    "description": "El componente v-combobox es un v-autocompletado que permite al usuario ingresar valores que no existen dentro de los elementos provistos."
+    <v-boilerplate $1></v-boilerplate>
+    """
 
   'Bottom navigation -> Vuetify':
     'prefix': 'v-bottom-navigation',
@@ -83,6 +75,13 @@
     <v-btn>$1</v-btn>
     """,
     "description": "El componente v-btn reemplaza el botón html estándar con un tema de diseño de material y una multitud de opciones."
+
+  'Button groups -> Vuetify':
+    'prefix': 'v-btn-toggle',
+    'body': """
+    <v-btn-toggle>$1</v-btn-toggle>
+    """,
+    "description": "El componente v-btn-toggle es un simple envoltorio para v-item-group construido específicamente para usarse con v-btn."
 
   'Calendars -> Vuetify':
     'prefix': 'v-calendar',
@@ -140,12 +139,83 @@
       """,
       "description": "El contenedor de imágenes utilizado por v-carrusel."
 
+  'Checkbox -> Vuetify':
+    'prefix': 'v-checkbox',
+    'body': """
+    <v-checkbox $1></v-checkbox>
+    """,
+    "description": "Los componentes de control de selección permiten al usuario seleccionar opciones."
+
   'Chips -> Vuetify':
     'prefix': 'v-chip',
     'body': """
     <v-chip>$1</v-chip>
     """,
     "description": "El componente v-chip se utiliza para transmitir pequeñas piezas de información."
+
+  'Chip groups -> Vuetify':
+    'prefix': 'v-chip-group',
+    'body': """
+    <v-chip-group>$1</v-chip-group>
+    """,
+    "description": "El grupo v-chip sobrealimenta el componente v-chip al proporcionar una funcionalidad agrupable. Se utiliza para crear grupos de selecciones usando chips."
+
+  'Col -> Vuetify':
+    'prefix': 'v-col',
+    'body': """
+    <v-col>$1</v-col>
+    """,
+    "description": "Es el contenido que debe ser un hijo directo de v-row. Este es el reemplazo 2.x para v-flex en 1.x."
+
+  'Color pickers -> Vuetify':
+    'prefix': 'v-color-picker',
+    'body': """
+    <v-color-picker $1></v-color-picker>
+    """,
+    "description": "El selector de color v-color-picker le permite seleccionar un color usando una variedad de métodos de entrada."
+
+  'Combobox -> Vuetify':
+    'prefix': 'v-combobox',
+    'body': """
+    <v-combobox $1></v-combobox>
+    """,
+    "description": "El componente v-combobox es un v-autocompletado que permite al usuario ingresar valores que no existen dentro de los elementos provistos."
+
+  'Container -> Vuetify':
+    'prefix': 'v-container',
+    'body': """
+    <v-container>$1</v-container>
+    """,
+    "description": "Proporciona la capacidad de centrar y rellenar horizontalmente los contenidos de su sitio. También puede usar el prop fluid para extender completamente el contenedor en todos los tamaños de ventana y dispositivo."
+
+  'Data iterators -> Vuetify':
+    'prefix': 'v-data-iterator',
+    'body': """
+    <v-data-iterator
+      :items="$1"
+      item-key="$2"
+      :items-per-page.sync="$3"
+    >$4</v-data-iterator>
+    """,
+    "description": "El componente v-data-iterator se usa para mostrar datos y comparte la mayoría de sus funciones con el componente v-data-table."
+
+  'Date pickers -> Vuetify':
+    'prefix': 'v-date-picker',
+    'body': """
+    <v-date-picker $1></v-date-picker>
+    """,
+    "description": "El selector de fecha v-date-picker es un componente independiente que se puede utilizar en muchos componentes Vuetify existentes."
+
+  'Data tables -> Vuetify':
+    'prefix': 'v-data-table',
+    'body': """
+    <v-data-table
+      v-model="$1"
+      :headers="$2"
+      :items="$3"
+      item-key="$4"></v-data-table>
+    """,
+    "description": "El componente v-data-table se usa para mostrar datos tabulares."
 
   'Dialogs -> Vuetify':
     'prefix': 'v-dialog',
@@ -207,12 +277,26 @@
     """,
     "description": "El componente v-footer se usa para mostrar información general a la que un usuario puede acceder desde cualquier página de su sitio."
 
+  'Hover -> Vuetify':
+    'prefix': 'v-hover',
+    'body': """
+    <v-hover>$1</v-hover>
+    """,
+    "description": "El componente v-hover proporciona una interfaz limpia para manejar estados de desplazamiento para cualquier componente."
+
   'Icons -> Vuetify':
     'prefix': 'v-icon',
     'body': """
     <v-icon>$1</v-icon>
     """,
     "description": "The v-icon component provides a large set of glyphs to provide context to various aspects of your application."
+
+  'Images -> Vuetify':
+    'prefix': 'v-img',
+    'body': """
+    <v-img src="$1"></v-img>
+    """,
+    "description": "El componente v-img está repleto de características para admitir medios enriquecidos."
 
   'Inputs -> Vuetify':
     'prefix': 'v-input',
@@ -221,12 +305,89 @@
     """,
     "description": "El componente v-input le proporciona una línea base para crear sus propias entradas personalizadas."
 
+  'Item groups -> Vuetify':
+    'prefix': 'v-item-group',
+    'body': """
+    <v-item-group>$1</v-item-group>
+    """,
+    "description": "El v-item-group proporciona la capacidad de crear un grupo de elementos seleccionables de cualquier componente. Esta es la funcionalidad básica para componentes como v-tabs y v-carousel."
+
+  'Lazy -> Vuetify':
+    'prefix': 'v-lazy',
+    'body': """
+    <v-lazy>$1</v-lazy>
+    """,
+    "description": "El componente v-lazy se usa para cargar dinámicamente componentes en función de la visibilidad de los elementos."
+
+  'List item groups -> Vuetify':
+    'prefix': 'v-list-item-group',
+    'body': """
+    <v-list-item-group>$1</v-list-item-group>
+    """,
+    "description": "El v-list-item-group proporciona la capacidad de crear un grupo de v-list-items seleccionables."
+
+  'Lists -> Vuetify':
+    'prefix': 'v-list',
+    'body': """
+    <v-list>$1</v-list>
+    """,
+    "description": "El componente v-list se usa para mostrar información. Puede contener un avatar, contenido, acciones, subtítulos y mucho más."
+
+  'Menus -> Vuetify':
+    'prefix': 'v-menu',
+    'body': """
+    <v-menu>$1</v-menu>
+    """,
+    "description": "El componente v-menu muestra un menú en la posición del elemento utilizado para activarlo."
+
+  'Navigation drawers -> Vuetify':
+    'prefix': 'v-navigation-drawer',
+    'body': """
+    <v-navigation-drawer>$1</v-navigation-drawer>
+    """,
+    "description": "El componente v-navigation-drawer es lo que utilizarán los usuarios para navegar por la aplicación."
+
+  'Overlays -> Vuetify':
+    'prefix': 'v-overlay',
+    'body': """
+    <v-overlay>$1</v-overlay>
+    """,
+    "description": "v-overflow-btn se usa para dar al usuario la capacidad de seleccionar elementos de la lista."
+
   'Overflow btns -> Vuetify':
     'prefix': 'v-overflow-btn',
     'body': """
     <v-overflow-btn $1></v-overflow-btn>
     """,
     "description": "v-overflow-btn se usa para dar al usuario la capacidad de seleccionar elementos de la lista."
+
+  'Paginations -> Vuetify':
+    'prefix': 'v-pagination',
+    'body': """
+    <v-pagination $1></v-pagination>
+    """,
+    "description": "El componente v-pagination se usa para separar conjuntos largos de datos para que sea más fácil para un usuario visualizar la información."
+
+  'Parallax -> Vuetify':
+    'prefix': 'v-parallax',
+    'body': """
+    <v-parallax src="$1">$2</v-parallax>
+    """,
+    "description": "El componente v-parallax crea un efecto 3D que hace que una imagen parezca desplazarse más lentamente que la ventana."
+
+  'Progress circular -> Vuetify':
+    'prefix': 'v-progress-circular',
+    'body': """
+    <v-progress-circular $1></v-progress-circular>
+    """,
+    "description": "El componente v-progress-circular se usa para transmitir datos circularmente a los usuarios."
+
+  'Progress linear -> Vuetify':
+    'prefix': 'v-progress-linear',
+    'body': """
+    <v-progress-linear $1></v-progress-linear>
+    """,
+    "description": "El componente v-progress-linear se usa para transmitir datos visualmente a los usuarios."
 
   'Radio -> Vuetify':
     'prefix': 'v-radio',
@@ -242,6 +403,20 @@
       """,
       "description": "Los componentes de control de selección permiten al usuario seleccionar opciones."
 
+  'Ratings -> Vuetify':
+    'prefix': 'v-rating',
+    'body': """
+    <v-rating>$1</v-rating>
+    """,
+    "description": "El componente de calificación es una pieza especializada pero crucial en la creación de widgets de usuario."
+
+  'Row -> Vuetify':
+    'prefix': 'v-row',
+    'body': """
+    <v-row>$1</v-row>
+    """,
+    "description": "Es un componente contenedor para v-col. Utiliza propiedades flex para controlar el diseño y el flujo de sus columnas internas."
+
   'Selects -> Vuetify':
     'prefix': 'v-select',
     'body': """
@@ -249,12 +424,74 @@
     """,
     "description": "Los componentes de campos seleccionados se utilizan para recopilar información proporcionada por el usuario de una lista de opciones."
 
+  'Sheets -> Vuetify':
+    'prefix': 'v-sheet',
+    'body': """
+    <v-sheet>$1</v-sheet>
+    """,
+    "description": "El v-sheet está diseñada para alimentar otros componentes de papel dentro de Vuetify."
+
+  'Simple tables -> Vuetify':
+    'prefix': 'v-simple-table',
+    'body': """
+    <v-simple-table>$1</v-simple-table>
+    """,
+    "description": "El componente v-simple-table es un componente contenedor simple alrededor del elemento <table>."
+
+  'Skeleton loaders -> Vuetify':
+    'prefix': 'v-skeleton-loader',
+    'body': """
+    <v-skeleton-loader $1></v-skeleton-loader>
+    """,
+    "description": "El componente v-skeleton-loader es una herramienta versátil que puede cumplir muchos roles dentro de un proyecto."
+
+  'Slide groups -> Vuetify':
+    'prefix': 'v-slide-group',
+    'body': """
+    <v-slide-group>$1</v-slide-group>
+    """,
+    "description": "El componente v-slide-group se usa para mostrar información pseudopaginada."
+
   'Sliders -> Vuetify':
     'prefix': 'v-slider',
     'body': """
     <v-slider $1></v-slider>
     """,
     "description": "El componente v-slider es la mejor visualización para la entrada del número."
+
+  'Snackbars -> Vuetify':
+    'prefix': 'v-snackbar',
+    'body': """
+    <v-snackbar $1>$2</v-snackbar>
+    """,
+    "description": "El componente v-snackbar se usa para mostrar un mensaje rápido a un usuario."
+
+  'Sparklines -> Vuetify':
+    'prefix': 'v-sparkline',
+    'body': """
+    <v-sparkline $1></v-sparkline>
+    """,
+    "description": "El componente minigráfico se puede usar para crear gráficos simples, como el gráfico de contribución de GitHub."
+
+  'Steppers -> Vuetify':
+    'prefix': 'v-stepper',
+    'body': """
+    <v-stepper $1></v-stepper>
+    """,
+    "description": "El componente v-stepper muestra el progreso a través de pasos numerados."
+
+    'Steppers Step -> Vuetify':
+      'prefix': 'v-stepper-step',
+      'body': """
+      <v-stepper-step $1>$2</v-stepper-step>
+      """
+
+  'Subheaders -> Vuetify':
+    'prefix': 'v-subheader',
+    'body': """
+    <v-subheader>$1</v-subheader>
+    """,
+    "description": "El componente v-subheader se usa para separar secciones de listas."
 
   'System bars -> Vuetify':
     'prefix': 'v-system-bar',
@@ -270,6 +507,13 @@
     """,
     "description": "Los componentes de control de selección permiten al usuario seleccionar opciones."
 
+  'Tabs -> Vuetify':
+    'prefix': 'v-tabs',
+    'body': """
+    <v-tabs>$1</v-tabs>
+    """,
+    "description": "El componente v-tabs se usa para ocultar contenido detrás de un elemento seleccionable."
+
   'Textarea -> Vuetify':
     'prefix': 'v-textarea',
     'body': """
@@ -284,9 +528,50 @@
     """,
     "description": "Los componentes de área de texto se utilizan para recopilar grandes cantidades de datos textuales."
 
+  'Time pickers -> Vuetify':
+    'prefix': 'v-time-picker',
+    'body': """
+    <v-time-picker $1></v-time-picker>
+    """,
+    "description": "El selector de tiempo v-time-picker es un componente independiente que se puede utilizar en muchos componentes Vuetify existentes."
+
+  'Timelines -> Vuetify':
+    'prefix': 'v-timeline',
+    'body': """
+    <v-timeline $1></v-timeline>
+    """,
+    "description": "La línea de tiempo v-timeline es útil para mostrar estilísticamente información cronológica."
+
+    'Timelines Item -> Vuetify':
+      'prefix': 'v-timeline-item',
+      'body': """
+      <v-timeline-item>$1</v-timeline-item>
+      """
+
   'Toolbars -> Vuetify':
     'prefix': 'v-toolbar',
     'body': """
     <v-toolbar>$1</v-toolbar>
     """,
     "description": "El componente de la barra de herramientas funciona muy bien en combinación con v-navigation-drawer y v-card."
+
+  'Tooltips -> Vuetify':
+    'prefix': 'v-tooltip',
+    'body': """
+    <v-tooltip>$1</v-tooltip>
+    """,
+    "description": "El componente v-tooltip es útil para transmitir información cuando un usuario se desplaza sobre un elemento."
+
+  'Treeview -> Vuetify':
+    'prefix': 'v-treeview',
+    'body': """
+    <v-treeview :items="$1">$2</v-treeview>
+    """,
+    "description": "El componente v-treeview es útil para mostrar grandes cantidades de datos anidados."
+
+  'Windows -> Vuetify':
+    'prefix': 'v-window',
+    'body': """
+    <v-window>$1</v-window>
+    """,
+    "description": "El componente v-window proporciona la funcionalidad de línea de base para la transición de contenido de 1 panel a otro."
