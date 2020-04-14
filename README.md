@@ -98,7 +98,7 @@ apm install snippets-atom-vuetify
 | Treeview | v-treeview |
 | Windows | v-window |
 
-> Version: v1.3.0
+> Version: v1.3.1
 
 ---
 
