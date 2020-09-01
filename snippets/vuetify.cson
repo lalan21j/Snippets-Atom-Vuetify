@@ -7,6 +7,13 @@
     """,
     "description": "El componente v-alert se utiliza para transmitir información importante al usuario a través de los iconos de tipos contextuales y el color."
 
+  'App -> Vuetify':
+     'prefix': 'v-app',
+     'body': """
+     <v-app $1></v-app>
+     """,
+     "description": ""
+
   'App bars -> Vuetify':
     'prefix': 'v-app-bar',
     'body': """
@@ -319,12 +326,33 @@
     """,
     "description": "El componente v-lazy se usa para cargar dinámicamente componentes en función de la visibilidad de los elementos."
 
+  'List item content -> Vuetify':
+    'prefix': 'v-list-item-content',
+    'body': """
+    <v-list-item-content>$1</v-list-item-content>
+    """,
+    "description": ""
+
   'List item groups -> Vuetify':
     'prefix': 'v-list-item-group',
     'body': """
     <v-list-item-group>$1</v-list-item-group>
     """,
     "description": "El v-list-item-group proporciona la capacidad de crear un grupo de v-list-items seleccionables."
+
+  'List item title -> Vuetify':
+    'prefix': 'v-list-item-title',
+    'body': """
+    <v-list-item-title>$1</v-list-item-title>
+    """,
+    "description": ""
+
+  'List item subtitle -> Vuetify':
+    'prefix': 'v-list-item-subtitle',
+    'body': """
+    <v-list-item-subtitle>1</v-list-item-subtitle>
+    """,
+    "description": ""
 
   'Lists -> Vuetify':
     'prefix': 'v-list',
@@ -473,6 +501,13 @@
     """,
     "description": "El componente minigráfico se puede usar para crear gráficos simples, como el gráfico de contribución de GitHub."
 
+  'Speed dial -> Vuetify':
+    'prefix': 'v-speed-dial',
+    'body': """
+    <v-speed-dial></v-speed-dial>
+    """,
+    "description": ""
+
   'Steppers -> Vuetify':
     'prefix': 'v-stepper',
     'body': """
@@ -513,6 +548,13 @@
     <v-tabs>$1</v-tabs>
     """,
     "description": "El componente v-tabs se usa para ocultar contenido detrás de un elemento seleccionable."
+
+  'Tabs items -> Vuetify':
+    'prefix': 'v-tabs-items',
+    'body': """
+    <v-tabs-items></v-tabs-items>
+    """,
+    "description": ""
 
   'Textarea -> Vuetify':
     'prefix': 'v-textarea',

@@ -1,4 +1,4 @@
-# Snippet Vuetify para Vue
+# Snippet Vuetify
 
 Instalación:
 
@@ -10,13 +10,14 @@ apm install snippets-atom-vuetify
 
 > Descripción en **español**.
 >
-> 81 etiquetas.
+> 87 etiquetas.
 
 #### Etiquetas:
 
 | Nombre  | Snippet |
 |---|---|
 | Alerts | v-alert |
+| App | v-app |
 | App bars | v-app-bar |
 | Autocomplete | v-autocomplete |
 | Avatars | v-avatar |
@@ -60,7 +61,10 @@ apm install snippets-atom-vuetify
 | Inputs | v-input |
 | Item groups | v-item-group |
 | Lazy | v-lazy |
+| List item content | v-list-item-content |
 | List item groups | v-list-item-group |
+| List item title | v-list-item-title |
+| List item subtitle | v-list-item-subtitle |
 | Lists | v-list |
 | Menus | v-menu |
 | Navigation drawers | v-navigation-drawer |
@@ -82,12 +86,14 @@ apm install snippets-atom-vuetify
 | Sliders | v-slider |
 | Snackbars | v-snackbar |
 | Sparklines | v-sparkline |
+| Speed dial | v-speed-dial |
 | Steppers | v-stepper |
 | Stepper Step | v-stepper-step |
 | Subheaders | v-subheader |
 | System bars | v-system-bar |
 | Switch | v-switch |
 | Tabs | v-tabs |
+| Tabs items | v-tabs-items |
 | Textarea | v-textarea |
 | Text fields | v-text-field |
 | Time pickers | v-time-picker |
